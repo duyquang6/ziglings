@@ -35,6 +35,10 @@ pub fn main() void {
             3 => {
                 current_value *= current_value;
             },
+            else => {
+                std.debug.print("test ne", .{});
+                unreachable;
+            },
         }
 
         std.debug.print("{} ", .{current_value});
